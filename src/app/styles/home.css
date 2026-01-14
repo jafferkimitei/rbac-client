@@ -1,0 +1,120 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f7f7f7;
+  color: #111;
+}
+
+/* Page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 48px 24px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 64px;
+}
+
+/* Header */
+.header h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.header strong {
+  color: #111;
+  font-weight: 500;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 16px;
+  margin: 48px 0 32px;
+}
+
+/* Buttons */
+.btn {
+  height: 48px;
+  padding: 0 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+/* Primary */
+.btn.primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #000;
+}
+
+/* Secondary */
+.btn.secondary {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #111;
+  background: transparent;
+}
+
+.btn.secondary:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Footer note */
+.note {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .card {
+    padding: 40px 24px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
